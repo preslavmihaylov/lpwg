@@ -1,0 +1,22 @@
+// Search for "launch" in File > Settings and click "Edit in settings.json".
+// Add this in there instead of the "launch" property
+"launch": {
+    "version": "0.2.0",
+    "configurations": [      
+        {
+            "name": "Remote",
+            "type": "go",
+            "request": "attach",            
+            "mode": "remote",
+            "remotePath": "${fileDirname}",
+            "port": 2345,
+            "host": "127.0.0.1",
+            "apiVersion": 2
+        }
+    ],
+    "compounds": []
+}
+
+// Open ~/.bashrc from the terminal using nano - "nano ~/.bashrc".
+// Add this line:
+alias godebug="dlv debug --headless --listen=:2345 --log --api-version=2 -- $@"
