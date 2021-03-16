@@ -27,7 +27,7 @@ func main() {
 		shuffledDeck = append(shuffledDeck, card)
 	}
 
-	fmt.Println(strings.Join(shuffledDeck, " ")) // "1 2 3 4 5"
+	fmt.Println(strings.Join(shuffledDeck, " "))
 }
 
 func remove(slice []string, i int) []string {
