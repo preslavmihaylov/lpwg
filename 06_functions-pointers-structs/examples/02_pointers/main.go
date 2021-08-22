@@ -16,7 +16,7 @@ func main() {
 	// of a value, not the value directly
 	var numPtr *int
 
-	// this operations takes the reference/address
+	// this operation takes the reference/address
 	// of the value stored in num
 	numPtr = &num
 
@@ -24,5 +24,5 @@ func main() {
 	// That is, taking the value which is being pointed to and
 	// changing it
 	*numPtr = 56
-	fmt.Println(num, *numPtr)
+	fmt.Println(num, *numPtr) // 56, 56
 }
