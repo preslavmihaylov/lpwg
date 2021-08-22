@@ -52,9 +52,33 @@ func main() {
 	p2.col = 4
 	fmt.Printf("row: %d, col: %d\n", p1.row, p1.col) // row: 3, col: 4
 
+	// The rules for passing variables to functions applies for custom data types as well.
+
+	// If you pass a variable as a value,
+	// any changes in the function don't take effect beyond the function scope.
+	incPoint(p1)
+	fmt.Println(p1) // {3 4}
+
+	// But if you pass a reference to the value instead,
+	// changes in the function take effect beyond its scope
+	incPointPtr(&p1)
+	fmt.Println(p1) // {4 5}
 }
 
 func incPoint(p Point) {
+	p.row += 1
+	p.col += 1
+}
+
+func incPointPtr(p *Point) {
+	// When working with pointers to custom data types,
+	// you don't need to dereference the value of the pointer explicitly.
+	//
+	// What's written below can also be written as:
+	//   (*p).row += 1
+	//   (*p).col += 1
+	//
+	// But you can get away with not writing the dereference operator explicitly
 	p.row += 1
 	p.col += 1
 }
