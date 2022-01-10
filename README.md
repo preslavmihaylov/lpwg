@@ -7,11 +7,11 @@ To get all the files on your computer, click "Clone" and then "Download ZIP".
 
 Here's where to find stuff:
 
-In <lecture-name>/examples, you can find all the examples demonstrated in the videos for the given lecture
+In **\<lecture-name\>/examples**, you can find all the examples demonstrated in the videos for the given lecture
 
-In <lecture-name>/exercises, you can find all the exercise solutions
+In **\<lecture-name\>/exercises**, you can find all the exercise solutions
 
-In game-projects, you can find the completed game projects you'll do at the end of the course
+In **game-projects**, you can find the completed game projects you'll do at the end of the course
 
 Use this site as reference in case you get stuck or if you want to revisit some of the concepts discussed in the lecture and tinker with them yourself.
 
