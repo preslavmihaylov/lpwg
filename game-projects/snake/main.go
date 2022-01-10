@@ -22,6 +22,7 @@ import (
 //     of the screen if it hits the wall
 // 9*. Make the game dynamically adjust when the screen is resized
 
+// This symbol looks nicer, but doesn't render well on some terminals.
 // const SnakeSymbol = 0x2588
 const SnakeSymbol = '*'
 const AppleSymbol = 0x25CF

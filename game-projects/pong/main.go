@@ -45,7 +45,6 @@ var debugLog string
 
 var gameObjects []*GameObject
 
-// This program just prints "Hello, World!".  Press ESC to exit.
 func main() {
 	InitScreen()
 	InitGameState()
@@ -79,8 +78,11 @@ func UpdateState() {
 		gameObjects[i].col += gameObjects[i].velCol
 	}
 
+	// Left for your convenience in case you want to debug something whilst doing the extra challenges:
+	//
 	// debugLog = fmt.Sprintf("ball: row=%d, col=%d\npaddle 1: row=%d, col=%d\npaddle 2: row=%d, col=%d",
 	// 	ball.row, ball.col, player1Paddle.row, player1Paddle.col, player2Paddle.row, player2Paddle.col)
+
 	if CollidesWithWall(ball) {
 		ball.velRow = -ball.velRow
 	}
