@@ -34,11 +34,16 @@ func main() {
 		fmt.Println("It's a weekend")
 	}
 
+	// This is equivalent to the above:
+	//
 	// if dayOfWeek == "Monday" {
+	// 	fmt.Println("It's a day before Wednesday")
 	// 	fmt.Println("It's a workday")
 	// } else if dayOfWeek == "Tuesday" {
+	// 	fmt.Println("It's a day before Wednesday")
 	// 	fmt.Println("It's a workday")
 	// } else if dayOfWeek == "Wednesday" {
+	// 	fmt.Println("It's a day before Wednesday")
 	// 	fmt.Println("It's a workday")
 	// } else if dayOfWeek == "Thursday" {
 	// 	fmt.Println("It's a workday")
