@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 	// A slice allows you to store a
-	// set of values in a single variables
+	// set of values in a single variable
 
 	// This syntax means:
 	// [] - create a slice
