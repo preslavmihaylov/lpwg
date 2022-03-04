@@ -12,7 +12,7 @@ func main() {
 	if cond1 && cond2 && cond3 && cond4 {
 		fmt.Println("All conditions match")
 	} else {
-		fmt.Println("All conditions don't match")
+		fmt.Println("Not all conditions match")
 	}
 
 	// Logical OR returns true if AT LEAST ONE of the sub-conditions is true
