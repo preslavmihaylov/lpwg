@@ -34,13 +34,13 @@ func main() {
 	var anotherInt int = int(aFloat)
 	fmt.Println(anotherInt)
 
-	// var numAsString string = "42"
-	// var num int = int(numAsString)
-	// fmt.Println(num)
-
+	// Sometimes, you might have incompatible types (eg string and int) but you could still convert across one another using functions
+	// from the standard library. For example, strconv.Atoi attempts to convert a string representation of a number to its int representation.
+	// eg "42" (string) -> 42 (int)
 	num, err := strconv.Atoi("42")
 	fmt.Println(num, err)
 
+	// strconv.Itoa, on the other hand, converts an int to a string.
 	var numAsString string = strconv.Itoa(num)
 	fmt.Println(numAsString)
 }
